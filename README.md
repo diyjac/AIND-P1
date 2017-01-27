@@ -26,7 +26,7 @@ def naked_twins(values):
     # Find all instances of naked twins
     ##########################################################################################################
     # we first find all possible naked twins values on the board
-    # then we use those values and isolate only the ones that appears more than once on the boar: our candidates
+    # then we use those values and isolate only the ones that appears more than once on the board: our candidates
     # with our candidates, we iterate through our unitlist and find units that have square with the candidate values
     # once we isolated the possible units with our candidate values, we get a list of all values for that unit
     # with the unit value list, we confirm our naked-twins by verifying that they occur more than once in a unit and add them to our list.
@@ -57,12 +57,12 @@ def naked_twins(values):
 
 
 # Question 2 (Diagonal Sudoku)
-Q: How do we use constraint propagation to solve the diagonal sudoku problem?
-A: A diagonal sudoku is like a regular sudoku, except that among the two main diagonals, the numbers 1 to 9 should all appear exactly once. In this project we will solve every diagonal sudoku too.  Below is a visualization of what this new diagonal sudoku additional constraints looks like:
+Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
+A: A diagonal sudoku is like a regular sudoku, except that among the two main diagonals, the numbers 1 to 9 should all appear exactly once. In this project we will solve every diagonal sudoku too.  Below is a visualization of what this additional diagonal constraints looks like:
 
 ![diagonal sudoku](./images/diagonal-sudoku.png)
 
-As with before,  **Contraint Propagation** is a powerful technique used in AI.  It is all about using local constraints in a space to dramatically reduce the search space for solving a given problem.  For diagonal sudoku, we added two additional constraints that the numbers 1 to 9 can only appear once in the 2 diagonals units.  One would think that these additional constraints are an added burden, but on the contrary, these new constrainst actually simplifies the problem by reducing our search space for solving our sudoku puzzle even further!  The code segment below shows how we implemented the diagonal units into our agent:
+As with before,  **Contraint Propagation** is a powerful technique used in AI.  It is all about using local constraints in a space to dramatically reduce the search space for solving a given problem.  For diagonal sudoku, we added two additional constraints that the numbers 1 to 9 can only appear once in the 2 diagonals units.  One would think that these additional constraints are an added burden, but on the contrary, these new constrainst actually simplifies the problem by reducing our search space for solving our sudoku puzzle even further!  The code segment below shows how we inserted the diagonal units into our agent:
 
 ```
 ## create our board and different views into the boards
