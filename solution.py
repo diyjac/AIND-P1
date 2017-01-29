@@ -54,11 +54,6 @@ def naked_twins(values):
     # we just need to iterate through them and for squares that are not the ones with the naked-twins values,
     # we remove the digits from them that are part of the naked-twins.  DONE!
     ##########################################################################################################
-    if len(units_with_naked_twins) > 0:
-        print("")
-        display(values)
-        print("")
-
     for naked_unit in units_with_naked_twins.keys():
         naked = units_with_naked_twins[naked_unit]
         for box in naked_unit.split('+'):
