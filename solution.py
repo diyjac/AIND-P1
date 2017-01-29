@@ -52,7 +52,8 @@ def naked_twins(values):
     # once we isolated the possible units with our candidate values, we get a list of all values for that unit
     units_with_candidates_values_list = dict(("+".join(u), [values[s] for s in u]) for u in units_with_candidates)
 
-    # with the unit value list, we confirm our naked-twins by verifying that they occur more than once in a unit and add them to our list.
+    # with the unit value list, we confirm our naked-twins by verifying that they occur more than once in a unit
+    #    and add them to our list.
     naked_twin_list = [twins for twins in candidate_naked_twins_values for u in units_with_candidates
                        if units_with_candidates_values_list["+".join(u)].count(twins)>1] 
 
