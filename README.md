@@ -23,7 +23,7 @@ And thus, find 3 additional solutions that were hidden before:
 
 ![naked-twins5](./images/naked-twins-5.png)
 
-Thus, this series of cascading eliminations and solution finding based on the constraints of the problem space is the application of **Contraint Propagation**.  The code that implements the **naked-twins** technique is located in [solution.py](./solution.py).
+Thus, this series of cascading eliminations and solution finding based on the constraints of the problem space is the application of **Contraint Propagation**.  The code that implements the **naked-twins** technique is located in [solution.py](./solution.py) starting at line 25.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
@@ -43,7 +43,7 @@ Once **8** has been eliminated and **9** is the only solution for **E5**, its co
 
 ![diagonal sudoku3](./images/diagonal-sudoku-3.png)
 
-By further applying the **elimination**, **only choice**, **naked-twin** and **search tree** techniques, we can use **constraint propagation** to solve the sudoku puzzle in all its forms including the diagonal sudoku with its new diagonal units **A1 B2 C3 D4 E5 F6 G7 H8 I9** and **A9 B8 C7 D6 E5 F4 G3 H2 I1**.  The code that implements the additional **diagonal constraints** is located in [solution.py](./solution.py).
+By further applying the **elimination**, **only choice**, **naked-twin** and **search tree** techniques, we can use **constraint propagation** to solve the sudoku puzzle in all its forms including the diagonal sudoku with its new diagonal units **A1 B2 C3 D4 E5 F6 G7 H8 I9** and **A9 B8 C7 D6 E5 F4 G3 H2 I1**.  The code that implements the additional **diagonal constraints** is located in [solution.py](./solution.py) starting at line 92.
 
 ### Install
 
